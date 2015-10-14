@@ -49,7 +49,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.define _conf['hostname'] do |v|
     v.trigger.after :destroy do
-      run "git checkout -- " + path + "/.vagrant/machines/vccw/virtualbox/dummy.txt"
+      run "git checkout -- " + path + "/.vagrant/machines/fictoc.dev/virtualbox/dummy.txt"
     end
   end
 
